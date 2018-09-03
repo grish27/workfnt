@@ -8,8 +8,8 @@ services:
     ports:
      - "8080:8080"
     volumes:
-     - "C:/Users/user1/code/workfront/jenkins/jobs:/var/jenkins_home/jobs/"
-     - "C:/Users/user1/code/workfront/jenkins/downloads:/var/jenkins_home/downloads"
+     - "C:/Users/user1/code/workfront/workfnt/jobs:/var/jenkins_home/jobs/"
+     - "C:/Users/user1/code/workfront/workfnt/downloads:/var/jenkins_home/downloads"
   logstash:
     image: logstash:2
     volumes:
@@ -50,10 +50,10 @@ services:
   mqlistener:
     build:
       context: ./mqlistener
-      dockerfile: C:/Users/user1/code/workfront/jenkins/mqlistener/Dockerfile
+      dockerfile: C:/Users/user1/code/workfront/workfnt/mqlistener/Dockerfile
     image: mqlistener
     labels:
       NAME: "mqlistener"
     volumes:
-      - "C:/Users/user1/code/workfront/jenkins/mqlistener:/usr/local/bin/"
+      - "C:/Users/user1/code/workfront/workfnt/mqlistener:/usr/local/bin/"
     tty: true

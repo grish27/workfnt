@@ -1,0 +1,38 @@
+Started by user [8mha:////4DxzZ/GtffVtfc0e16Nepd4G+0oFsaOK81HXrN1jmkyOAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/jenkins-maven/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/jabedhasan21/java-hello-world-with-maven.git
+ > git init /var/jenkins_home/jobs/jenkins-maven/workspace # timeout=10
+Fetching upstream changes from https://github.com/jabedhasan21/java-hello-world-with-maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jabedhasan21/java-hello-world-with-maven.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/jabedhasan21/java-hello-world-with-maven.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jabedhasan21/java-hello-world-with-maven.git # timeout=10
+Fetching upstream changes from https://github.com/jabedhasan21/java-hello-world-with-maven.git
+ > git fetch --tags --progress https://github.com/jabedhasan21/java-hello-world-with-maven.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 877dbd1e8001ec08bff1e21a6f653ff6c67422f6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 877dbd1e8001ec08bff1e21a6f653ff6c67422f6
+Commit message: "Declare Dependencies"
+First time build. Skipping changelog.
+[workspace] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven3/apache-maven-3.5.4/bin/mvn -f example/pom.xml compile
+POM file example/pom.xml specified with the -f/--file command line argument does not exist
+[INFO] Scanning for projects...
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[FATAL] Non-readable POM /var/jenkins_home/jobs/jenkins-maven/workspace/example/pom.xml: /var/jenkins_home/jobs/jenkins-maven/workspace/example/pom.xml (No such file or directory) @ 
+ @ 
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The build could not read 1 project -> [Help 1]
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   The project  (/var/jenkins_home/jobs/jenkins-maven/workspace/example/pom.xml) has 1 error
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]     Non-readable POM /var/jenkins_home/jobs/jenkins-maven/workspace/example/pom.xml: /var/jenkins_home/jobs/jenkins-maven/workspace/example/pom.xml (No such file or directory)
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4NBZ6OaaFTVoqzbYYhXJldHK8miEFYg4bprytCP7cSKlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

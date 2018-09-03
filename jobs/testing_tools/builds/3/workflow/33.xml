@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Tag plugin="workflow-support@2.18">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@2.45">
+    <parentIds>
+      <string>32</string>
+    </parentIds>
+    <id>33</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.ToolStep</descriptorId>
+  </node>
+  <actions>
+    <wf.a.TimingAction plugin="workflow-api@2.27">
+      <startTime>1535845041234</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogActionImpl>
+      <charset>UTF-8</charset>
+    </s.a.LogActionImpl>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@2.45">
+      <arguments class="linked-hash-map">
+        <entry>
+          <string>name</string>
+          <string>maven3</string>
+        </entry>
+        <entry>
+          <string>type</string>
+          <string>hudson.tasks.Maven$MavenInstallation</string>
+        </entry>
+      </arguments>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@2.27">
+      <startTime>1535845041305</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

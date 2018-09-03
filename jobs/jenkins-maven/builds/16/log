@@ -1,0 +1,38 @@
+Started by user [8mha:////4D7pJoLyOFSIRbYazKK/FwMyCwSDOkkWDz4ej4y7PjQmAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/jenkins-maven/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jabedhasan21/java-hello-world-with-maven.git # timeout=10
+Fetching upstream changes from https://github.com/jabedhasan21/java-hello-world-with-maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jabedhasan21/java-hello-world-with-maven.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 877dbd1e8001ec08bff1e21a6f653ff6c67422f6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 877dbd1e8001ec08bff1e21a6f653ff6c67422f6
+Commit message: "Declare Dependencies"
+ > git rev-list --no-walk 877dbd1e8001ec08bff1e21a6f653ff6c67422f6 # timeout=10
+[workspace] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven3/apache-maven-3.5.4/bin/mvn -f pom.xml compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< org.springframework:jb-hello-world-maven >--------------
+[INFO] Building jb-hello-world-maven 0.1.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4GjPdCUMrwLDcLPc6+jIrBvfVK7+KO2MnhYa/By6oIeHAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jb-hello-world-maven ---
+[8mha:////4NtPFECjuVlWTuJfNumt0J2/lwa2qyg+rXo1B8pujUBXAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/jenkins-maven/workspace/src/main/resources
+[INFO] 
+[8mha:////4GjPdCUMrwLDcLPc6+jIrBvfVK7+KO2MnhYa/By6oIeHAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ jb-hello-world-maven ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4NtPFECjuVlWTuJfNumt0J2/lwa2qyg+rXo1B8pujUBXAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to /var/jenkins_home/jobs/jenkins-maven/workspace/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.889 s
+[INFO] Finished at: 2018-09-03T12:16:04Z
+[INFO] ------------------------------------------------------------------------
+Publish to RabbitMQ: Success.
+Finished: SUCCESS

@@ -1,0 +1,3 @@
+[workspace] Running shell script
++ which java
+/var/jenkins_home/tools/hudson.model.JDK/jdk7/jdk1.7.0_80/bin/java

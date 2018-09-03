@@ -1,0 +1,7 @@
+[workspace] Running shell script
++ mvn -version
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T18:33:14Z)
+Maven home: /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven3/apache-maven-3.5.4
+Java version: 1.7.0_80, vendor: Oracle Corporation, runtime: /var/jenkins_home/tools/hudson.model.JDK/jdk7/jdk1.7.0_80/jre
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "4.9.93-linuxkit-aufs", arch: "amd64", family: "unix"

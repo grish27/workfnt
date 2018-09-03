@@ -1,0 +1,3 @@
+[workspace] Running shell script
++ which mvn
+/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven3/apache-maven-3.5.4/bin/mvn
