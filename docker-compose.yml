@@ -1,0 +1,59 @@
+version: '3.1'
+
+services:
+  gjenkins:
+    build:
+      context: .
+    image: gjenkins
+    ports:
+     - "8080:8080"
+    volumes:
+     - "C:/Users/user1/code/workfront/jenkins/jobs:/var/jenkins_home/jobs/"
+     - "C:/Users/user1/code/workfront/jenkins/downloads:/var/jenkins_home/downloads"
+  logstash:
+    image: logstash:2
+    volumes:
+          - ./:/config
+    command: logstash -f /config/logstash.conf
+    links:
+     - elasticsearch
+    depends_on:
+     - elasticsearch
+ 
+  elasticsearch:
+     image: elasticsearch:2
+     ports:
+      - "9200:9200"
+
+  kibana:
+    image: kibana:4
+    ports:
+     - "5601:5601"
+    links:
+     - elasticsearch
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    depends_on:
+         - elasticsearch
+    
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "rabbit"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    labels:
+      NAME: "rabbitmq"
+    volumes:
+      - ./rabbitmq-isolated.conf:/etc/rabbitmq/rabbitmq.config
+  
+  mqlistener:
+    build:
+      context: ./mqlistener
+      dockerfile: C:/Users/user1/code/workfront/jenkins/mqlistener/Dockerfile
+    image: mqlistener
+    labels:
+      NAME: "mqlistener"
+    volumes:
+      - "C:/Users/user1/code/workfront/jenkins/mqlistener:/usr/local/bin/"
+    tty: true
